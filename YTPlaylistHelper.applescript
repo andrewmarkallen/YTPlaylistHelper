@@ -3,7 +3,7 @@ to saveToPlaylist(playlistName)
   tell application "Safari" to tell document 1
 
     do JavaScript "
-      document.querySelector('[aria-label=\"Save to\"]').click();
+      document.querySelector('[aria-label=\"Save\"]').click();
       var attempts = 0;
       var playlists = null;
       var checkExist = setInterval(function() {
